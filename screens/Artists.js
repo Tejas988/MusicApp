@@ -20,7 +20,7 @@ import {
 } from 'react-native';
 
 
-export default class Albums extends Component {
+export default class Artists extends Component {
   constructor(props) {
     super(props);
 

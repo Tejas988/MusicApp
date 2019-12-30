@@ -30,11 +30,11 @@ export default class Tracks extends Component {
 
 
   performSearch({search}) {
-    fetch('https://ws.audioscrobbler.com/2.0/?method=album.search&album='+search+'&api_key=14976a871b29b5611ebdbd98c66b24ad&format=json')
+    fetch('http://ws.audioscrobbler.com/2.0/?method=track.search&track='+search+'&api_key=0c0e5f11eaf86c12feb243c90d08004b&format=json&format=json')
     .then((response) => response.json()) 
     .then(response => {
         this.setState ({
-          Data : response.results.albummatches.album,    
+          Data : response.results.trackmatches.track, 
           
         })    
     })
